@@ -83,8 +83,7 @@ server.use((req, res, next) => {
   })
 server.use(router)
 
-const port = process.env.JSON_SERVER_PORT || 3004
-
+const port = process.env.PORT || 3001
 
 server.listen(port, () => {
     console.log(`JSON Server is running on port ${port}`)
